@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the complete single-page website structure with header, hero, about, services, gallery, contact sections, and footer.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky navigation header with logo, responsive menu, and smooth scroll navigation to all page sections.",
+  "frontend/src/components/SiteFooter.tsx": "Footer component displaying company information, contact details (emails and GSTIN only), legal information, and attribution with dynamic year and UTM tracking.",
+  "frontend/src/components/Section.tsx": "Reusable section wrapper component providing consistent spacing, titles, subtitles, and red accent separators across all page sections.",
+  "frontend/src/sections/HeroSection.tsx": "Full-screen hero section with text-only content featuring company name, tagline, description, CTA buttons, and scroll indicator on a clean red-and-white gradient background without any images.",
+  "frontend/src/sections/AboutSection.tsx": "About section with company profile, registration details, GSTIN, three highlight cards showcasing key business values, and three detailed information cards (DESIGN WITH PURPOSE, WHAT WE STAND FOR, and Our Commitment) displaying company values, CSR practices, and business commitment.",
+  "frontend/src/sections/ServicesSection.tsx": "Services section displaying four service cards (wholesale, retail, materials, brand solutions) with features and a call-to-action.",
+  "frontend/src/sections/GallerySection.tsx": "Responsive image gallery grid displaying 8 facility photos with generated fallback images for each tile, click-to-view lightbox functionality, seamless fallback handling on load errors, and explicit safeguard preventing IMG_0552.png screenshot inclusion.",
+  "frontend/src/sections/ContactSection.tsx": "Contact section with two information cards (email addresses and legal info) and prominent email call-to-action buttons, with responsive grid layout adjusted for two cards.",
+  "frontend/src/index.css": "Global styles with red-and-white OKLCH color system for both light and dark modes, smooth scrolling, and custom design tokens.",
+  "frontend/tailwind.config.js": "Tailwind configuration with extended red-themed color palette, custom fonts (Inter, Poppins), and design system tokens.",
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags and Open Graph tags now using locally served generated images for social media previews instead of external URLs.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this frontend-only marketing website.",
+  "frontend/src/lib/publicAsset.ts": "Helper utility to build public asset URLs that work correctly in both development and production by ensuring paths are resolved relative to the app's base path."
+}

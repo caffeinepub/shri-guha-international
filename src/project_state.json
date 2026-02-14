@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 19,
+  "summary": "Build a red-and-white themed marketing website for Shri Guha International (Guha International), a garment/clothing manufacturing and wholesale/retail business, including company details, services, gallery images, and contact information, using provided PDF text content; do not show an image on the front page/hero.",
+  "architectural_notes": [
+    "Website theme: red and white.",
+    "Business identity content to include: Guha International (trade name), proprietorship, Chennai/Tamil Nadu, GSTIN 33BJLPH3465H1Z7 active since 26 Oct 2019, principal place of business address in Dindigul, Tamil Nadu.",
+    "Services to highlight: garment/clothing manufacturing for wholesalers, retailers, and own-brand users; wide range of clothing materials.",
+    "Contact details to include: shriguhainternational@gmail.com; harigovindvs100@gmail.com; address: 7/21, Pattalamman Kovil Street, Manikaranpatti, Madur Post, Dindigul, Tamil Nadu - 624306.",
+    "Homepage/Hero: no image on the front page (text-only hero; no banner/background image)."
+  ],
+  "known_issues": [
+    "Gallery images fail to load at runtime; user sees an \"image could not be loaded\" message/placeholder instead of images.",
+    "User reports images still not visible on the deployed site; gallery/hero appear to have no images loading."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-marketing-website-for-the-garment-manufacturing-business-using-the-company-name-shri-guha-international-legal-trade-name-guha-international-and-a-clear-red-and-white-brand-theme",
+      "title": "Create a responsive marketing website for the garment manufacturing business using the company name \"Shri Guha International\" (legal trade name: \"Guha International\") and a clear red-and-white brand theme.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-single-page-layout-with-top-navigation-and-anchored-sections-home-hero-about-company-overview-services-gallery-and-contact",
+      "title": "Implement a single-page layout with top navigation and anchored sections: Home (hero), About/Company Overview, Services, Gallery, and Contact.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-provided-company-profile-text-into-the-about-company-overview-section-preserving-the-meaning-and-key-facts-proprietorship-registration-in-chennai-tamil-nadu-gstin-33bjlph3465h1z7-active-since-26-october-2019-principal-place-of-business-address-at-7-21-pattalamman-kovil-street-manikaranpatti-madur-post-dindigul-tamil-nadu-624306-focus-on-customer-satisfaction-reliability-quality-standards-wholesale-retail-positioning-and-emphasis-on-digital-marketing-and-seo-for-online-visibility",
+      "title": "Add the provided company profile text into the About/Company Overview section, preserving the meaning and key facts: proprietorship registration in Chennai, Tamil Nadu; GSTIN 33BJLPH3465H1Z7 active since 26 October 2019; principal place of business address at 7/21, Pattalamman Kovil Street, Manikaranpatti, Madur Post, Dindigul, Tamil Nadu - 624306; focus on customer satisfaction, reliability, quality standards; wholesale/retail positioning; and emphasis on digital marketing and SEO for online visibility.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-section-describing-the-business-offerings-manufacturing-clothes-for-wholesalers-and-retailers-and-offering-a-wide-range-of-clothing-materials-for-own-brand-users-brand-owners",
+      "title": "Create a Services section describing the business offerings: manufacturing clothes for wholesalers and retailers, and offering a wide range of clothing materials for own-brand users (brand owners).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-8-uploaded-images-to-the-website-as-1-a-hero-banner-visual-at-least-one-image-and-2-a-gallery-section-with-a-responsive-grid-and-click-to-view-lightbox-dialog-behavior",
+      "title": "Add the 8 uploaded images to the website as (1) a hero/banner visual (at least one image) and (2) a Gallery section with a responsive grid and click-to-view (lightbox/dialog) behavior.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-section-that-displays-the-business-contact-information-with-clear-labels-and-mailto-links-for-both-emails-company-email-shriguhainternational-gmail-com-and-personal-email-harigovindvs100-gmail-com-include-the-full-address-and-gstin-33bjlph3465h1z7",
+      "title": "Create a Contact section that displays the business contact information with clear labels and mailto links for both emails: company email shriguhainternational@gmail.com and personal email harigovindvs100@gmail.com; include the full address and GSTIN 33BJLPH3465H1Z7.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-on-page-seo-metadata-and-semantics-for-a-company-marketing-site-set-page-title-meta-description-and-open-graph-tags-referencing-shri-guha-international-guha-international-and-garment-manufacturing-in-tamil-nadu-ensure-headings-use-a-logical-structure-h1-once-then-h2s-per-section",
+      "title": "Add basic on-page SEO metadata and semantics for a company marketing site: set page title, meta description, and Open Graph tags referencing Shri Guha International / Guha International and garment manufacturing in Tamil Nadu; ensure headings use a logical structure (H1 once, then H2s per section).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-generate-and-include-a-simple-brand-logo-and-favicon-consistent-with-the-red-and-white-theme-and-use-them-in-the-site-header-and-browser-tab",
+      "title": "Generate and include a simple brand logo and favicon consistent with the red-and-white theme, and use them in the site header and browser tab.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-gallery-section-to-include-the-5-newly-uploaded-images-img-0548-jpeg-img-0546-jpeg-img-0550-jpeg-img-0549-jpeg-img-0547-jpeg-in-the-existing-gallery-grid-and-ensure-they-open-correctly-in-the-existing-lightbox-dialog-when-clicked",
+      "title": "Update the Gallery section to include the 5 newly uploaded images (IMG_0548.jpeg, IMG_0546.jpeg, IMG_0550.jpeg, IMG_0549.jpeg, IMG_0547.jpeg) in the existing gallery grid and ensure they open correctly in the existing lightbox dialog when clicked.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-gallery-and-hero-image-assets-referenced-by-the-frontend-are-present-in-the-deployed-frontend-static-assets-and-resolve-to-http-200-at-runtime-no-broken-paths-specifically-verify-the-files-referenced-in-frontend-src-sections-gallerysection-tsx-and-frontend-src-sections-herosection-tsx-under-assets-uploads-and-either-a-add-the-missing-image-files-into-frontend-public-assets-uploads-with-the-exact-filenames-used-in-code-or-b-update-the-src-paths-in-code-to-match-the-actual-uploaded-filenames-that-exist-in-the-deployed-build",
+      "title": "Ensure all gallery and hero image assets referenced by the frontend are present in the deployed frontend static assets and resolve to HTTP 200 at runtime (no broken paths). Specifically verify the files referenced in `frontend/src/sections/GallerySection.tsx` and `frontend/src/sections/HeroSection.tsx` under `/assets/uploads/...`, and either (a) add the missing image files into `frontend/public/assets/uploads/` with the exact filenames used in code, or (b) update the `src` paths in code to match the actual uploaded filenames that exist in the deployed build.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-graceful-error-handling-and-user-feedback-for-missing-broken-gallery-images-when-an-image-fails-to-load-show-a-visible-placeholder-tile-and-a-short-english-message-indicating-the-image-could-not-be-loaded-without-breaking-the-grid-layout-or-the-lightbox-behavior",
+      "title": "Add graceful error handling and user feedback for missing/broken gallery images: when an image fails to load, show a visible placeholder tile and a short English message indicating the image could not be loaded, without breaking the grid layout or the lightbox behavior.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-deployed-frontend-so-the-hero-background-image-and-all-gallery-images-load-successfully-no-broken-static-asset-paths-verify-that-every-image-referenced-in-frontend-src-sections-herosection-tsx-frontend-src-sections-gallerysection-tsx-and-frontend-index-html-under-assets-uploads-exists-at-runtime-and-returns-http-200-then-either-a-add-the-missing-image-files-into-frontend-public-assets-uploads-using-the-exact-filenames-referenced-in-code-or-b-update-the-code-to-reference-only-filenames-that-actually-exist-in-the-deployed-build",
+      "title": "Fix the deployed frontend so the Hero background image and all Gallery images load successfully (no broken static asset paths). Verify that every image referenced in `frontend/src/sections/HeroSection.tsx`, `frontend/src/sections/GallerySection.tsx`, and `frontend/index.html` under `/assets/uploads/...` exists at runtime and returns HTTP 200; then either (a) add the missing image files into `frontend/public/assets/uploads/` using the exact filenames referenced in code, or (b) update the code to reference only filenames that actually exist in the deployed build.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-new-uploaded-file-img-0552-png-a-screenshot-is-not-accidentally-used-as-a-hero-gallery-production-asset-unless-explicitly-added-keep-the-gallery-limited-to-the-intended-facility-workshop-photos",
+      "title": "Ensure the new uploaded file `IMG_0552.png` (a screenshot) is not accidentally used as a hero/gallery production asset unless explicitly added; keep the gallery limited to the intended facility/workshop photos.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-set-of-built-in-assistant-provided-static-images-under-frontend-public-assets-generated-and-ensure-they-are-included-in-the-deployed-build-so-the-site-can-display-images-even-when-assets-uploads-images-are-missing-or-fail-to-load",
+      "title": "Add a set of built-in (assistant-provided) static images under `frontend/public/assets/generated/` and ensure they are included in the deployed build so the site can display images even when `/assets/uploads/*` images are missing or fail to load.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-src-sections-herosection-tsx-so-the-hero-background-uses-a-built-in-generated-hero-image-by-default-or-as-an-immediate-fallback-and-only-uses-an-assets-uploads-image-if-it-loads-successfully-ensure-the-hero-never-renders-with-a-blank-missing-background",
+      "title": "Update `frontend/src/sections/HeroSection.tsx` so the hero background uses a built-in generated hero image by default (or as an immediate fallback), and only uses an `/assets/uploads/...` image if it loads successfully; ensure the hero never renders with a blank/missing background.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-src-sections-gallerysection-tsx-so-the-gallery-uses-a-built-in-generated-gallery-set-by-default-or-as-a-per-tile-fallback-and-still-preserves-the-existing-grid-layout-click-to-view-lightbox-behavior-and-existing-safeguard-that-excludes-img-0552-png",
+      "title": "Update `frontend/src/sections/GallerySection.tsx` so the gallery uses a built-in generated gallery set by default (or as a per-tile fallback) and still preserves the existing grid layout, click-to-view lightbox behavior, and existing safeguard that excludes `IMG_0552.png`.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-index-html-social-preview-metadata-og-image-and-twitter-image-to-reference-a-locally-served-generated-image-under-assets-generated-instead-of-an-external-domain-url-so-previews-do-not-break-when-uploads-are-unavailable",
+      "title": "Update `frontend/index.html` social preview metadata (`og:image` and `twitter:image`) to reference a locally served generated image (under `/assets/generated/...`) instead of an external domain URL so previews do not break when uploads are unavailable.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-hero-section-frontend-src-sections-herosection-tsx-so-the-front-page-is-text-only-with-no-hero-banner-image-no-background-image-and-no-image-element-rendered-in-the-hero-keep-a-clean-red-and-white-styled-background-using-css-tailwind-e-g-solid-color-gradient-pattern-so-the-hero-still-looks-polished-and-readable",
+      "title": "Update the Home/Hero section (frontend/src/sections/HeroSection.tsx) so the front page is text-only with no hero/banner image (no background image and no image element rendered in the hero). Keep a clean red-and-white styled background using CSS/Tailwind (e.g., solid color/gradient/pattern) so the hero still looks polished and readable.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-user-facing-content-that-references-customer-relationships-and-digital-excellence-from-the-website-copy-specifically-in-the-about-section-highlights-and-detailed-information-cards",
+      "title": "Remove all user-facing content that references “Customer Relationships” and “Digital Excellence” from the website copy, specifically in the About section highlights and detailed information cards.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-front-page-about-section-frontend-src-sections-aboutsection-tsx-to-insert-the-following-new-copy-blocks-above-the-existing-our-commitment-card-content-preserving-the-existing-red-and-white-styling-and-layout-1-heading-design-with-purpose-text-we-help-interpret-your-vision-taking-ideas-from-your-perspective-and-turning-it-into-reality-2-heading-what-we-stand-for-bullet-paragraph-leading-with-our-employees-we-believe-our-employees-are-one-of-our-greatest-assets-paragraph-at-guha-we-are-committed-to-expanding-our-csr-practices-through-meaningful-programs-that-make-a-difference-in-the-world-guha-has-adopted-a-robust-framework-created-through-deliberate-and-consistent-actions-which-results-in-long-lasting-benefits-for-our-people-and-the-planet-the-existing-our-commitment-heading-and-paragraph-must-remain-and-appear-after-these-new-blocks",
+      "title": "Update the front-page About section (`frontend/src/sections/AboutSection.tsx`) to insert the following new copy blocks above the existing “Our Commitment” card content, preserving the existing red-and-white styling and layout:\n\n1) Heading: “DESIGN WITH PURPOSE”\nText: “We help interpret your vision. Taking ideas from your perspective and turning it into reality.”\n\n2) Heading: “WHAT WE STAND FOR”\nBullet/paragraph: “Leading with our employees: We believe our employees are one of our greatest assets.”\nParagraph: “At Guha, we are committed to expanding our CSR practices through meaningful programs that make a difference in the world. Guha has adopted a robust framework created through deliberate and consistent actions, which results in long-lasting benefits for our people and the planet.”\n\nThe existing “Our Commitment” heading and paragraph must remain and appear after these new blocks.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-business-address-location-card-from-the-contact-section-so-the-contact-grid-no-longer-displays-any-location-address-field-while-keeping-the-email-and-legal-gstin-registration-status-cards-intact-and-preserving-the-responsive-grid-layout",
+      "title": "Remove the business address / location card from the Contact section so the Contact grid no longer displays any location/address field, while keeping the email and legal (GSTIN, registration status) cards intact and preserving the responsive grid layout.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-our-location-content-block-from-the-about-section-so-the-about-section-no-longer-includes-the-address-text-or-any-heading-referring-to-location",
+      "title": "Remove the \"Our Location\" content block from the About section so the About section no longer includes the address text or any heading referring to location.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-location-address-details-from-the-site-footer-so-the-footer-no-longer-displays-the-street-address-block-and-no-longer-shows-any-location-field-in-the-legal-information-area-while-keeping-the-email-links-and-gstin-visible",
+      "title": "Remove location/address details from the site footer so the footer no longer displays the street address block and no longer shows any \"Location:\" field in the Legal Information area, while keeping the email links and GSTIN visible.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a red-and-white themed company website for Shri Guha International with key sections (Home, About, Services, Gallery, Contact) and company details (emails, address, GSTIN).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add provided factory/workshop images to the website (gallery and banner/hero placements).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Include the provided company profile/PDF text content in the About/Company Overview section (proprietorship, GST active since 26 Oct 2019, customer satisfaction/quality focus, wholesale & retail positioning).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add SEO/digital marketing emphasis content to reflect the company’s stated importance of online visibility and SEO.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Replace missing/broken gallery/hero assets by adding the assistant’s own placeholder/stock images so the site displays images even if user-provided uploads are unavailable.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Remove/disable the front-page (hero) image so the homepage/hero is text-only (no banner/background image).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Remove references to “customer relationships” and “digital excellence” from the website content/copy.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Add new homepage/front-page copy blocks (“DESIGN WITH PURPOSE”, “We help interpret your vision…”, “WHAT WE STAND FOR”, and CSR/employee values text) above the existing “Our commitment” section.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Remove the company location/address information from the website content (\"our location\").",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Shri Guha International",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

@@ -1,0 +1,76 @@
+{
+  "kind": "build_request",
+  "title": "Remove all location/address content from the website",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-21",
+      "text": "Remove the business address / location card from the Contact section so the Contact grid no longer displays any location/address field, while keeping the email and legal (GSTIN, registration status) cards intact and preserving the responsive grid layout.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Remove our location"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/src/sections/ContactSection.tsx` no longer renders the section titled \"Business Address\" or any item labeled \"Location\".",
+        "The Contact section still shows both email addresses with working `mailto:` links.",
+        "The Contact section still shows GSTIN and registration status.",
+        "The Contact cards grid remains responsive and visually consistent (no broken spacing when one card is removed)."
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Remove the \"Our Location\" content block from the About section so the About section no longer includes the address text or any heading referring to location.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Remove our location"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/src/sections/AboutSection.tsx` no longer includes the card with heading \"Our Location\".",
+        "The street address (\"7/21, Pattalamman Kovil Street, Manikaranpatti, Madur Post, Dindigul, Tamil Nadu - 624306\") does not appear anywhere in the About section UI.",
+        "The remaining About content (including DESIGN WITH PURPOSE, WHAT WE STAND FOR, and Our Commitment) remains in the same order and retains the existing styling."
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Remove location/address details from the site footer so the footer no longer displays the street address block and no longer shows any \"Location:\" field in the Legal Information area, while keeping the email links and GSTIN visible.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "Remove our location"
+        ]
+      },
+      "acceptanceCriteria": [
+        "`frontend/src/components/SiteFooter.tsx` no longer renders the address paragraph containing \"7/21, Pattalamman Kovil Street...\".",
+        "`frontend/src/components/SiteFooter.tsx` no longer renders the Legal Information line that starts with \"Location:\" (e.g., \"Chennai, Tamil Nadu\").",
+        "Footer still shows both email addresses and the GSTIN.",
+        "No broken icons/imports remain after removing the location blocks (e.g., unused `MapPin` imports are removed)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under `frontend/src/components/ui` (compose existing UI components only).",
+    "Keep the backend unchanged (no Motoko changes required)."
+  ],
+  "nonGoals": [
+    "Do not remove or change the Gallery section, hero section, or any image-related behavior.",
+    "Do not change the email addresses, GSTIN, or registration status text.",
+    "Do not add maps, geolocation, or any location-based features."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

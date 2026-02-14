@@ -1,0 +1,57 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove all location/address content from the website",
+  "requirements": [
+    {
+      "id": "REQ-21",
+      "summary": "Remove the Business Address/Location card from the Contact section while preserving email + legal cards and maintaining a responsive grid.",
+      "acceptanceCriteria": [
+        "`frontend/src/sections/ContactSection.tsx` no longer renders the section titled \"Business Address\" or any item labeled \"Location\".",
+        "The Contact section still shows both email addresses with working `mailto:` links.",
+        "The Contact section still shows GSTIN and registration status.",
+        "The Contact cards grid remains responsive and visually consistent (no broken spacing when one card is removed)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Remove the 'Business Address' entry from the `contactDetails` array (including the 'Location' item and the street address value). Update lucide imports to remove unused icons (e.g., `MapPin`, `Phone` if unused). Adjust the grid column classes (e.g., avoid `lg:grid-cols-3` with only two cards) to keep spacing visually consistent across breakpoints, while keeping the existing email cards (with `mailto:` links) and the legal (GSTIN + registration status) card unchanged."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Remove the Our Location content block from the About section without changing remaining content order or styling.",
+      "acceptanceCriteria": [
+        "`frontend/src/sections/AboutSection.tsx` no longer includes the card with heading \"Our Location\".",
+        "The street address (\"7/21, Pattalamman Kovil Street, Manikaranpatti, Madur Post, Dindigul, Tamil Nadu - 624306\") does not appear anywhere in the About section UI.",
+        "The remaining About content (including DESIGN WITH PURPOSE, WHAT WE STAND FOR, and Our Commitment) remains in the same order and retains the existing styling."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/sections/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Delete the 'Our Location' detailed information card block (heading and paragraph containing the street address). Ensure the remaining detailed cards keep their current order and styling. Verify no lingering address string remains in this section after removal."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Remove address and location fields from the footer while keeping emails and GSTIN, and clean up unused icon imports.",
+      "acceptanceCriteria": [
+        "`frontend/src/components/SiteFooter.tsx` no longer renders the address paragraph containing \"7/21, Pattalamman Kovil Street...\".",
+        "`frontend/src/components/SiteFooter.tsx` no longer renders the Legal Information line that starts with \"Location:\" (e.g., \"Chennai, Tamil Nadu\").",
+        "Footer still shows both email addresses and the GSTIN.",
+        "No broken icons/imports remain after removing the location blocks (e.g., unused `MapPin` imports are removed)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Remove the footer address block under Contact Information (the `MapPin` row and the paragraph with the street address). Remove the 'Location:' line from the Legal Information area. Update lucide imports to remove `MapPin` once unused. Keep both email links and GSTIN display unchanged, and ensure layout spacing remains consistent with the removed row(s)."
+        }
+      ]
+    }
+  ]
+}
