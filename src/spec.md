@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Remove all business location/address content from the website while keeping contact and legal details intact.
+**Goal:** Remove the 7th image from the Gallery so it no longer appears or opens in the lightbox.
 
 **Planned changes:**
-- Update the Contact section to remove the Business Address/Location card, keeping the email and legal (GSTIN, registration status) cards and preserving the responsive grid layout.
-- Update the About section to remove the “Our Location” block and ensure the full street address text no longer appears there.
-- Update the site footer to remove the street address block and any “Location:” line in the Legal Information area, while keeping email links and GSTIN visible and cleaning up any now-unused imports.
+- Update `frontend/src/sections/GallerySection.tsx` to remove the gallery entry with `uploadSrc` `assets/uploads/IMG_0541-1.jpeg` (and its fallback `assets/generated/sgi-gallery-07-v2.dim_1200x1200.jpg`) from the `images` list used to render tiles and power the lightbox.
+- Ensure the existing safeguard that excludes `IMG_0552.png` remains unchanged.
 
-**User-visible outcome:** The website no longer shows any location/address information in Contact, About, or the footer, while email contact links and legal details remain available and the layout remains visually consistent.
+**User-visible outcome:** The Gallery shows 7 tiles instead of 8, and the removed image is no longer visible nor accessible via the lightbox while the remaining images continue to open normally.

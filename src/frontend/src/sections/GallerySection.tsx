@@ -19,42 +19,37 @@ export function GallerySection() {
   const images: GalleryImage[] = [
     {
       uploadSrc: publicAsset('assets/uploads/31d46ff5-488b-4452-98e3-d86e28745423.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-01.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-01-v2.dim_1200x1200.jpg'),
       alt: 'Garment Manufacturing Floor'
     },
     {
       uploadSrc: publicAsset('assets/uploads/83a8041e-d497-48a1-89ba-047e2b3715c6.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-02.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-02-v2.dim_1200x1200.jpg'),
       alt: 'Production Facility'
     },
     {
       uploadSrc: publicAsset('assets/uploads/IMG_0541.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-03.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-03-v2.dim_1200x1200.jpg'),
       alt: 'Sewing Machines and Equipment'
     },
     {
       uploadSrc: publicAsset('assets/uploads/84a58552-bd66-4ff1-925a-04858424767c.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-04.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-04-v2.dim_1200x1200.jpg'),
       alt: 'Manufacturing Workshop'
     },
     {
       uploadSrc: publicAsset('assets/uploads/31d46ff5-488b-4452-98e3-d86e28745423-1.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-05.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-05-v2.dim_1200x1200.jpg'),
       alt: 'Garment Production Area'
     },
     {
       uploadSrc: publicAsset('assets/uploads/83a8041e-d497-48a1-89ba-047e2b3715c6-1.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-06.dim_1200x1200.jpg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-06-v2.dim_1200x1200.jpg'),
       alt: 'Factory Floor Operations'
     },
     {
-      uploadSrc: publicAsset('assets/uploads/IMG_0541-1.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-07.dim_1200x1200.jpg'),
-      alt: 'Textile Manufacturing Equipment'
-    },
-    {
-      uploadSrc: publicAsset('assets/uploads/84a58552-bd66-4ff1-925a-04858424767c-1.jpeg'),
-      fallbackSrc: publicAsset('assets/generated/sgi-gallery-08.dim_1200x1200.jpg'),
+      uploadSrc: publicAsset('assets/uploads/IMG_0548-2.jpeg'),
+      fallbackSrc: publicAsset('assets/generated/sgi-gallery-08-v2.dim_1200x1200.jpg'),
       alt: 'Production Workspace'
     }
   ].filter(img => !img.uploadSrc.includes('IMG_0552.png')); // Explicit safeguard against screenshot

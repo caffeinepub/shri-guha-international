@@ -1,46 +1,24 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-14T09:36:03.192Z",
+  "generatedAt": "2026-02-14T10:09:27.986Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 3,
-    "implemented": 3,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-21",
-        "summary": "Remove the business address / location card from the Contact section so the Contact grid no longer displays any location/address field, while keeping the email and legal (GSTIN, registration status) cards intact and preserving the responsive grid layout.",
+        "id": "REQ-30",
+        "summary": "Update `frontend/src/sections/GallerySection.tsx` to remove the 7th image from the Gallery so it is not displayed as a tile and cannot be opened in the lightbox. The 7th image is currently the entry with `uploadSrc` `assets/uploads/IMG_0541-1.jpeg` (fallback `assets/generated/sgi-gallery-07-v2.dim_1200x1200.jpg`, alt `Textile Manufacturing Equipment`).",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/sections/ContactSection.tsx"
+          "frontend/src/sections/GallerySection.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/sections/ContactSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-22",
-        "summary": "Remove the \"Our Location\" content block from the About section so the About section no longer includes the address text or any heading referring to location.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/sections/AboutSection.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/sections/AboutSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-23",
-        "summary": "Remove location/address details from the site footer so the footer no longer displays the street address block and no longer shows any \"Location:\" field in the Legal Information area, while keeping the email links and GSTIN visible.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/SiteFooter.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/SiteFooter.tsx"
+          "frontend/src/sections/GallerySection.tsx"
         ]
       }
     ]
@@ -50,9 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/SiteFooter.tsx",
-    "frontend/src/sections/AboutSection.tsx",
-    "frontend/src/sections/ContactSection.tsx",
+    "frontend/src/sections/GallerySection.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -1,17 +1,19 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 19,
+  "projectStateVersion": 27,
   "summary": "Build a red-and-white themed marketing website for Shri Guha International (Guha International), a garment/clothing manufacturing and wholesale/retail business, including company details, services, gallery images, and contact information, using provided PDF text content; do not show an image on the front page/hero.",
   "architectural_notes": [
     "Website theme: red and white.",
     "Business identity content to include: Guha International (trade name), proprietorship, Chennai/Tamil Nadu, GSTIN 33BJLPH3465H1Z7 active since 26 Oct 2019, principal place of business address in Dindigul, Tamil Nadu.",
     "Services to highlight: garment/clothing manufacturing for wholesalers, retailers, and own-brand users; wide range of clothing materials.",
     "Contact details to include: shriguhainternational@gmail.com; harigovindvs100@gmail.com; address: 7/21, Pattalamman Kovil Street, Manikaranpatti, Madur Post, Dindigul, Tamil Nadu - 624306.",
-    "Homepage/Hero: no image on the front page (text-only hero; no banner/background image)."
+    "Homepage/Hero: no image on the front page (text-only hero; no banner/background image).",
+    "Gallery imagery requirement: use realistic facility/workshop/garment-related images only; do not include any persons/people in images."
   ],
   "known_issues": [
     "Gallery images fail to load at runtime; user sees an \"image could not be loaded\" message/placeholder instead of images.",
-    "User reports images still not visible on the deployed site; gallery/hero appear to have no images loading."
+    "User reports images still not visible on the deployed site; gallery/hero appear to have no images loading.",
+    "Deployed site still does not show the intended replacement in the Gallery; the user reports the image they sent was not used/replaced."
   ],
   "isFixRequest": false,
   "existing_features": [
@@ -198,6 +200,46 @@
         "REQ-23"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-replace-the-last-image-tile-in-the-gallery-section-our-facility-with-the-newly-attached-image-file-img-0548-1-jpeg-so-the-last-tile-displays-this-image-and-opens-it-correctly-in-the-existing-lightbox-modal-when-clicked",
+      "title": "Replace the last image tile in the Gallery section (\"Our Facility\") with the newly attached image file `IMG_0548-1.jpeg`, so the last tile displays this image and opens it correctly in the existing lightbox modal when clicked.",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-gallery-section-to-replace-the-current-last-gallery-tile-image-currently-referencing-assets-uploads-img-0548-1-jpeg-with-the-newly-uploaded-image-file-img-0548-2-jpeg-and-ensure-the-tile-and-the-lightbox-both-open-display-img-0548-2-jpeg-successfully-without-falling-back-when-the-asset-exists",
+      "title": "Update the Gallery section to replace the current last gallery tile image (currently referencing `/assets/uploads/IMG_0548-1.jpeg`) with the newly uploaded image file `IMG_0548-2.jpeg`, and ensure the tile and the lightbox both open/display `IMG_0548-2.jpeg` successfully (without falling back) when the asset exists.",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-generated-gallery-fallback-images-referenced-by-frontend-src-sections-gallerysection-tsx-the-assets-generated-sgi-gallery-01-08-dim-1200x1200-jpg-files-with-more-realistic-garment-factory-workshop-facility-photos-that-contain-no-persons-people",
+      "title": "Replace the current generated Gallery fallback images referenced by `frontend/src/sections/GallerySection.tsx` (the `assets/generated/sgi-gallery-01..08.dim_1200x1200.jpg` files) with more realistic garment factory/workshop/facility photos that contain no persons/people.",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-gallery-never-displays-any-generated-fallback-image-that-contains-persons-people-by-updating-the-fallback-asset-set-used-by-frontend-src-sections-gallerysection-tsx-keep-the-existing-upload-image-safeguard-that-excludes-img-0552-png",
+      "title": "Ensure the Gallery never displays any generated fallback image that contains persons/people by updating the fallback asset set used by `frontend/src/sections/GallerySection.tsx` (keep the existing upload-image safeguard that excludes `IMG_0552.png`).",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-frontend-src-sections-gallerysection-tsx-to-remove-the-7th-image-from-the-gallery-so-it-is-not-displayed-as-a-tile-and-cannot-be-opened-in-the-lightbox-the-7th-image-is-currently-the-entry-with-uploadsrc-assets-uploads-img-0541-1-jpeg-fallback-assets-generated-sgi-gallery-07-v2-dim-1200x1200-jpg-alt-textile-manufacturing-equipment",
+      "title": "Update `frontend/src/sections/GallerySection.tsx` to remove the 7th image from the Gallery so it is not displayed as a tile and cannot be opened in the lightbox. The 7th image is currently the entry with `uploadSrc` `assets/uploads/IMG_0541-1.jpeg` (fallback `assets/generated/sgi-gallery-07-v2.dim_1200x1200.jpg`, alt `Textile Manufacturing Equipment`).",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -252,6 +294,40 @@
     {
       "id": "AR-9",
       "summary": "Remove the company location/address information from the website content (\"our location\").",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Replace the last picture in the Gallery section with the newly attached image.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Ensure the uploaded image file `IMG_0548-1.jpeg` is included in the deployed frontend static assets under `frontend/public/assets/uploads/` (or update code to reference the exact deployed filename), so the image resolves successfully at runtime (HTTP 200) and does not trigger the fallback/placeholder behavior.",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Ensure the uploaded image file `IMG_0548-2.jpeg` is included in the deployed frontend static assets under `frontend/public/assets/uploads/` (or update the frontend to reference the exact deployed filename that exists), so the image resolves successfully at runtime (HTTP 200) and does not trigger the fallback/placeholder behavior.",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Update/replace gallery images so they look more realistic and do not include any persons/people.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Remove the 7th image from the Gallery section (do not display it as a tile / ensure it is not shown in lightbox navigation).",
       "reqIds": [],
       "status": "pending"
     }

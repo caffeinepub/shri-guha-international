@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-business-address-location-card-from-the-contact-section-so-the-contact-grid-no-longer-displays-any-location-address-field-while-keeping-the-email-and-legal-gstin-registration-status-cards-intact-and-preserving-the-responsive-grid-layout",
-      "featureTitle": "Remove the business address / location card from the Contact section so the Contact grid no longer displays any location/address field, while keeping the email and legal (GSTIN, registration status) cards intact and preserving the responsive grid layout.",
+      "featureId": "feature-update-frontend-src-sections-gallerysection-tsx-to-remove-the-7th-image-from-the-gallery-so-it-is-not-displayed-as-a-tile-and-cannot-be-opened-in-the-lightbox-the-7th-image-is-currently-the-entry-with-uploadsrc-assets-uploads-img-0541-1-jpeg-fallback-assets-generated-sgi-gallery-07-v2-dim-1200x1200-jpg-alt-textile-manufacturing-equipment",
+      "featureTitle": "Update `frontend/src/sections/GallerySection.tsx` to remove the 7th image from the Gallery so it is not displayed as a tile and cannot be opened in the lightbox. The 7th image is currently the entry with `uploadSrc` `assets/uploads/IMG_0541-1.jpeg` (fallback `assets/generated/sgi-gallery-07-v2.dim_1200x1200.jpg`, alt `Textile Manufacturing Equipment`).",
       "files": [
-        "frontend/src/sections/ContactSection.tsx"
+        "frontend/src/sections/GallerySection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,43 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-21"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-remove-the-our-location-content-block-from-the-about-section-so-the-about-section-no-longer-includes-the-address-text-or-any-heading-referring-to-location",
-      "featureTitle": "Remove the \"Our Location\" content block from the About section so the About section no longer includes the address text or any heading referring to location.",
-      "files": [
-        "frontend/src/sections/AboutSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-22"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-remove-location-address-details-from-the-site-footer-so-the-footer-no-longer-displays-the-street-address-block-and-no-longer-shows-any-location-field-in-the-legal-information-area-while-keeping-the-email-links-and-gstin-visible",
-      "featureTitle": "Remove location/address details from the site footer so the footer no longer displays the street address block and no longer shows any \"Location:\" field in the Legal Information area, while keeping the email links and GSTIN visible.",
-      "files": [
-        "frontend/src/components/SiteFooter.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-23"
+        "REQ-30"
       ],
       "confidence": "high"
     }
